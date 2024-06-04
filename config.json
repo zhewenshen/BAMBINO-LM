@@ -1,0 +1,27 @@
+{
+    "seed": 347,
+    "model_name": "babylm/opt-125m-strict-small",
+    "learning_rate": 1.41e-5,
+    "log_with": "wandb",
+    "batch_size": 32,
+    "mini_batch_size": 32,
+    "data_files": "./combined_data.train",
+    "steps": 18000,
+    "epochs": 10,
+    "max_length": 128,
+    "threshold": 150,
+    "reward_model": "GroNLP/gpt2-small-italian",
+    "total_ratio": 12,
+    "clm_step_ratio": 10,
+    "prompt_size": 8,
+    "gen_size": 16,
+    "generation_kwargs": {
+        "min_length": -1,
+        "top_k": 0.0,
+        "top_p": 1.0,
+        "do_sample": true,
+        "pad_token_id": 2,
+        "max_new_tokens": 16
+    },
+    "output_dir": "./output"
+}
