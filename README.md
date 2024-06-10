@@ -23,7 +23,7 @@ python3 train.py --config config.json
 ```
 
 ## Evaluation
-Evaluations for our paper were conducted using EleutherAI's [Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) on the [UINAUIL](https://github.com/valeriobasile/uinauil/tree/main) dataset. Please refer to the original repositories for usage.
+Evaluations for our experiments were conducted using EleutherAI's [Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) on the [UINAUIL](https://github.com/valeriobasile/uinauil/tree/main) dataset. Please refer to the original repositories for usage.
 
 ## License
 Distributed under the MIT License. See `LICENSE.txt` for more information.
