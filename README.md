@@ -1,7 +1,10 @@
 # BAMBINO-LM: (Bilingual-)Human-Inspired Continual Pretraining of BabyLM
 
-## Abstract
 Children from bilingual backgrounds benefit from interactions with parents and teachers to re-acquire their heritage language. In this paper, we investigate how this insight from behavioral study can be incorporated into the learning of small-scale language models. We introduce BAMBINO-LM, a continual pretraining strategy for BabyLM that uses a novel combination of alternation and PPO-based perplexity reward induced from a parent Italian model. Upon evaluation on zero-shot classification tasks for English and Italian, BAMBINO-LM improves the Italian language capability of a BabyLM baseline. Our ablation analysis demonstrates that employing both the alternation strategy and PPO-based modeling is key to this effectiveness gain. We also show that, as a side effect, the proposed method leads to similar degradation in L1 effectiveness as human children would have had in an equivalent learning scenario.
+
+<p align="center">
+  <img src="arch.jpg" alt="arch" width=70%/>
+</p>
 
 ## Training
 
@@ -20,4 +23,7 @@ python3 train.py --config config.json
 ```
 
 ## Evaluation
-Evaluations for our paper were conducted using EleutherAI's [Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) on the [UINAUIL](https://github.com/valeriobasile/uinauil/tree/main) dataset. Please refer to the original repositories for usage guidelines.
+Evaluations for our paper were conducted using EleutherAI's [Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) on the [UINAUIL](https://github.com/valeriobasile/uinauil/tree/main) dataset. Please refer to the original repositories for usage.
+
+## License
+Distributed under the MIT License. See `LICENSE.txt` for more information.
